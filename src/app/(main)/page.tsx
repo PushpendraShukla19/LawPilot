@@ -60,7 +60,7 @@ export default function DashboardPage() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 sm:gap-6">
         {features.map((feature) => (
           <Link href={feature.href} key={feature.href} className="group">
             <Card className="flex h-full flex-col transition-all duration-200 group-hover:shadow-lg group-hover:-translate-y-1">
