@@ -3,7 +3,7 @@
 import * as React from "react"
 import { Slot } from "@radix-ui/react-slot"
 import { VariantProps, cva } from "class-variance-authority"
-import { PanelLeft } from "lucide-react"
+import { PanelLeftClose } from "lucide-react"
 
 import { useIsMobile } from "@/hooks/use-mobile"
 import { cn } from "@/lib/utils"
@@ -207,7 +207,7 @@ const Sidebar = React.forwardRef<
             side={side}
             {...props}
           >
-            <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
+            <SheetTitle className="sr-only">Main Menu</SheetTitle>
             <div className="flex h-full w-full flex-col">{children}</div>
           </SheetContent>
         </Sheet>
@@ -280,7 +280,7 @@ const SidebarTrigger = React.forwardRef<
       }}
       {...props}
     >
-      <PanelLeft />
+      <PanelLeftClose />
       <span className="sr-only">Toggle Sidebar</span>
     </Button>
   )
@@ -761,5 +761,6 @@ export {
   SidebarRail,
   SidebarSeparator,
   SidebarTrigger,
+  SheetTitle,
   useSidebar,
 }
